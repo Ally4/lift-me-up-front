@@ -1,10 +1,15 @@
 import { useState } from 'react'
+import { useHistory } from 'react-router-dom';
 import reactLogo from './assets/react.svg'
 import './App.css'
 import LandingPage from './components/landingPage';
 
 function App() {
   const [count, setCount] = useState(0)
+  const landingPage = useHistory();
+  const toLandingPage = () => {
+    landingPage.push('./components/landingPage');
+  }
 
   return (
     <div className="App">
@@ -21,6 +26,7 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+        <button onClick={toLandingPage}>This is the landing page</button>
         <a href='./components/landingPage.jsx'>The landing page</a>
         <LandingPage />
         <p>
