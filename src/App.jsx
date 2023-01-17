@@ -4,6 +4,7 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import LandingPage from './components/landingPage';
 import Home from './components/Home';
+import UserProfil from './components/userProfil';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/landing" element={<LandingPage />} />
+        <Route path="/user-profil" element={<UserProfil />} />
       </Routes>
     </BrowserRouter>
   )
