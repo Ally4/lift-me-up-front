@@ -2,6 +2,7 @@ import { useState } from 'react'
 // import { useHistory } from 'react-router-dom';
 import reactLogo from './assets/react.svg'
 import './App.css'
+import Header from './components/Header'
 import LandingPage from './components/landingPage';
 import Home from './components/Home';
 import UserProfil from './components/userProfil';
@@ -20,6 +21,7 @@ function App() {
   return (
 
     <BrowserRouter>
+     <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/landing" element={<LandingPage />} />
@@ -28,7 +30,7 @@ function App() {
         <Route path="/nav" element={<Nav />} />
         <Route path="/about" element={<About />} /> 
         <Route path="/products" element={<Products />} />
-        <Route path="/blog" element={<Blog />} />
+        {/* <Route path="/blog" element={<Blog />} /> */}
       </Routes>
     </BrowserRouter>
   )
