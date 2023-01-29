@@ -28,8 +28,8 @@ function App() {
         <Route path="/user-profil" element={<UserProfil />} />
         <Route path="/business-profil" element={<BusinessProfil />} />
         <Route path="/nav" element={<Nav />} />
-        <Route path="/about" element={<About />} /> 
-        <Route path="/products" element={<Products />} />
+        {/* <Route path="/about" element={<About />} />  */}
+        {/* <Route path="/products" element={<Products />} /> */}
         {/* <Route path="/blog" element={<Blog />} /> */}
       </Routes>
     </BrowserRouter>
