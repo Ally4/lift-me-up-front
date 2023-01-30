@@ -11,7 +11,7 @@ main{
   padding: 20px;
 }
 .sidebar{
-  background: #000;
+  background: #99CCCC;
   color: #fff;
   height: 100vh;
   width: 200px;
@@ -38,14 +38,17 @@ main{
   transition: all 0.5s;
 }
 .link:hover{
-  background:lightskyblue;
+  background:#366BA1;
   color: #000;
   transition: all 0.5s;
 }
 .active{
-  background: lightskyblue;
+  background: #366BA1;
   color: #000;
 }
 .icon, .link_text{
   font-size: 20px;
 }
+
+
+/* Bleu, purple and green are the colors for fintech industry */
