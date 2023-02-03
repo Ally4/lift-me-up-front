@@ -8,6 +8,7 @@ import Analytics from './pages/Analytics.jsx';
 import Comment from './pages/Comment.jsx';
 import Product from './pages/Product.jsx';
 import ProductList from './pages/ProductList.jsx';
+import Counter from './features/counter/Counter';
 
 
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/productList" element={<ProductList />} />
         </Routes>
       </Sidebar>
+      <Counter />
     </BrowserRouter>
   )
 }
