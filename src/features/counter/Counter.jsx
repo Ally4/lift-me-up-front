@@ -20,10 +20,16 @@ const Counter = () => {
         <p>{count}</p>
         <button onClick={() => dispatch(increament())}>+</button>
         <button onClick={() => dispatch(decreament())}>-</button>
-        <button onClick={() => dispatch(reset())}>reset</button>
-        <button onClick={() => dispatch(increamentByAmount())}>increamentByAmount</button>
-        <input>
+        {/* <button onClick={() => dispatch(reset())}>reset</button>
+        <button onClick={() => dispatch(increamentByAmount())}>increamentByAmount</button> */}
+        <input type="number"
+                value={increamentAmount}
+                onChange = {(e) => setIncreamentAmount(e.target.value)}>
         </input>
+        <div>
+          <button onClick={() => dispatch(increamentByAmount(addValue))}> Add Amount</button>
+          <button onClick={resetAll}> Reset</button>
+        </div>
       </section>
   )
 }
