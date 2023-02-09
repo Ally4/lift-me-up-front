@@ -8,7 +8,8 @@ const Counter = () => {
   const dispatch = useDispatch();
 
   const [increamentAmount, setIncreamentAmount ] = useState(0);
-  const addValue = Number(increamentAmount) || 0;
+  // const addValue = Number(increamentAmount) || 0;
+  const addValue = parseInt(increamentAmount);
 
   const resetAll = () => {
     setIncreamentAmount(0);
