@@ -9,7 +9,7 @@ import Comment from './pages/Comment.jsx';
 import Product from './pages/Product.jsx';
 import ProductList from './pages/ProductList.jsx';
 import Counter from './features/counter/Counter';
-// import Investment from './pages/Investment';
+import Investment from './pages/Investment.jsx';
 
 
 
@@ -26,7 +26,7 @@ function App() {
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/product" element={<Product />} />
           <Route path="/productList" element={<ProductList />} />
-          {/* <Route path="/investment" element={<Investment />} /> */}
+          <Route path="/investment" element={<Investment />} />
         </Routes>
       </Sidebar>
       <Counter />
