@@ -6,7 +6,8 @@ import {
     FaRegChartBar,
     FaCommentAlt,
     FaShoppingBag,
-    FaThList
+    FaThList,
+    TfiWallet
 }from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 
@@ -44,7 +45,12 @@ const Sidebar = ({children}) => {
             path:"/productList",
             name:"Product List",
             icon:<FaThList/>
-        }
+        },
+        {
+            path:"/investment",
+            name:"Investment",
+            icon:<TfiWallet/>
+        }   
     ]
     return (
         <div className="container">
